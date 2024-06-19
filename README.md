@@ -25,7 +25,7 @@ cd terminal-interactive-library
 Allows users to select a single option from a set of options using arrow keys.
 
 ```python
-from interactive-cmd.py import select_option
+from interactiveCLUI.py import select_option
 
 options = ["Option 1", "Option 2", "Option 3"]
 selected_option = select_option("Select an option:", options)
@@ -38,7 +38,7 @@ print(f"You selected: {selected_option}")
 Allows users to select multiple options from a set of options using arrow keys.
 
 ```python
-from interactive-cmd.py import select_multiple_options_with_arrows
+from interactiveCLUI.py import select_multiple_options_with_arrows
 
 options = ["Option 1", "Option 2", "Option 3"]
 selected_options = select_multiple_options_with_arrows("Select multiple options:", options)
@@ -51,7 +51,7 @@ Allows users to input text given a prompt.
 
 ```python
 
-from interactive-cmd.py import input_text
+from interactiveCLUI.py import input_text
 
 user_input = input_text("Enter your name:")
 print(f"Hello, {user_input}!")
@@ -63,7 +63,7 @@ Allows users to select an option using text input (e.g., Y/n).
 
 ```python
 
-from interactive-cmd.py import input_text_with_options
+from interactiveCLUI.py import input_text_with_options
 
 answer = input_text_with_options("What access rights would you like to give ",options="rwxh",default="r")
 print(f"You selected: {answer}")
@@ -74,7 +74,7 @@ Allows users to select Y/n using text input.
 
 ```python
 
-from interactive-cmd.py import input_yesorno
+from interactiveCLUI.py import input_yesorno
 
 confirmation = input_yesorno("Add file path",default="y")
 print(f"You selected: {confirmation}")

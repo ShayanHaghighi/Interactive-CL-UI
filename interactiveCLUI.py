@@ -128,7 +128,7 @@ def select_option(prompt:str, options:list[str]):
     clear_prevline()
     
     # print prompt with chosen option (in form 'prompt - option')
-    print_prompt_and_option(prompt,options[selected_option])
+    print_prompt_and_option(prompt,(options[selected_option]))
 
     return options[selected_option]
 
